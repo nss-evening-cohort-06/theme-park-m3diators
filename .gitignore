@@ -5,3 +5,5 @@ lib/node_modules
 dist/app.js
 
 styles/main.css
+
+db/firebaseApi.json
