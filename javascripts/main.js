@@ -1,5 +1,6 @@
 "use strict";
 
+
 const data = require('./data');
 const apiKeys = require('./apiKeys');
 
@@ -17,3 +18,8 @@ const searchAttractions = (query) => {
     console.log("error in searchAttractions", error);
   });
 };
+
+const events = require('./events');
+
+events.pressEnter();
+
