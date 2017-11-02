@@ -13,6 +13,17 @@ const pressEnter = (press) => {
 	});
 };
 
+const searchAttractions = (query) => {
+	console.log("hello", query);
+  data.getParkAttractions(query).then((data) => {
+    data.showResults(data);
+    console.log("searchAttractions", data.results);
+  }).catch((error) => {
+    console.log("error in searchAttractions", error);
+  });
+};
 
 
-module.exports = {pressEnter};
+
+
+module.exports = {pressEnter, searchAttractions};

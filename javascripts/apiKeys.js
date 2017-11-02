@@ -2,7 +2,6 @@
 
 
 const data = require('./data');
-// const firebaseApi = require('./firebaseApi');
 
 const apiKeys = () => {
   return new Promise((resolve, reject) => {
