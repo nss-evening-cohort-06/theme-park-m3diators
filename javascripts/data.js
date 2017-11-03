@@ -23,7 +23,9 @@ const getAreas = () => {
 };
 
 const showResults = (themeParkArray) => {
-  dom.domString();
+  // dom.domString();
+  // clickevents 
+  // search event
 };
 
 const setKey = (apiKey) => {
