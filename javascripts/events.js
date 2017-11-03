@@ -7,7 +7,8 @@ const dom = require('./dom');
 const pressEnter = (press) => {
 	$(document).keypress((event) => {
 		if(event.key === 'Enter'){
-		let userInput = $('#searchBar').val();
+		let txt = ($('#searchBar').val());
+		searchAttractions(txt);
 	}
 	console.log("keypress event", event);
 	});

@@ -19,8 +19,6 @@ const getParkAttractions = (query) => {
 };
 
 
-
-
 const showResults = (themeParkArray) => {
   dom.domString();
 };
