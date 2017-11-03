@@ -1,7 +1,7 @@
 "use strict";
 
 
-const data = require('./data');
+const dataPage = require('./data');
 const firebaseApi = require('./apiKeys');
 
 firebaseApi.retrieveKeys();
