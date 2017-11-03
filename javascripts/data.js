@@ -3,27 +3,28 @@
 let firebaseKey;
 const dom = require('./dom');
 
-
+let areas = [];
 
 
 
 const getParkAttractions = (query) => {
   return new Promise((resolve, reject) => {
     $.ajax(`${firebaseKey.databaseURL}/areas.json`).done((data) => {
-    	console.log("getParkAttractions", data);
       resolve(data);
+      areas = data;
     }).fail((error) => {
       reject(error);
     });
   });
 };
 
-
-
+const getAreas = () => {
+  return areas;
+};
 
 const showResults = (themeParkArray) => {
   dom.domString();
-  console.log("dom", showResults);
+  //console.log("dom", showResults);
 };
 
 
@@ -36,4 +37,4 @@ const setKey = (apiKey) => {
 
 
 
-module.exports = {getParkAttractions, setKey, showResults};
+module.exports = {getParkAttractions, setKey, showResults, getAreas};

@@ -10,5 +10,3 @@ firebaseApi.retrieveKeys();
 const events = require('./events');
 
 events.pressEnter();
-dom.domString ();
-
