@@ -23,7 +23,9 @@ const getParkAttractions = (query) => {
 
 const showResults = (themeParkArray) => {
   dom.domString();
+  console.log("dom", showResults);
 };
+
 
 const setKey = (apiKey) => {
   firebaseKey = apiKey;
