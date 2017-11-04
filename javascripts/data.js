@@ -23,18 +23,18 @@ const getAreas = () => {
 };
 
 const showResults = (themeParkArray) => {
-  // dom.domString();
-  // clickevents 
-  // search event
+  dom.domString();
+
 };
 
 const setKey = (apiKey) => {
   firebaseKey = apiKey;
 };
 
+const initializer = () => {
+    getParkAttractions();  
+};
 
 
 
-
-
-module.exports = {getParkAttractions, setKey, showResults, getAreas};
+module.exports = {initializer, getParkAttractions, setKey, showResults, getAreas};
