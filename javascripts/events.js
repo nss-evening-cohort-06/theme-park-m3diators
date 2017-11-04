@@ -1,13 +1,14 @@
 "use strict";
 
-const dataPage = require('./data');
 const dom = require('./dom');
+const dataPage = require('./data');
+
 
 
 const pressEnter = (press) => {
 	$(document).keypress((event) => {
 		if(event.key === 'Enter'){
-		let txt = ($('#searchBar').val());
+		let txt = ($('#searchBar').val().toLowerCase());
 		let areaData = dataPage.getAreas();
 		let results = areaData.filter(function(thing){
 			return thing.name.indexOf(txt)>-1;

@@ -1,19 +1,14 @@
 {
-    "park-info": [
-        {
-            "name": "Put Your Park Name Here",
-            "description": "Magic Kingdom is Walt Disney World's most popular destination, and is first on everyone's list of things to experience when they arrive in Central Florida. The park is full of great attractions like Seven Dwarfs Mine Train, Space Mountain, and Jungle Cruise, and features lots of entertainment including parades, fireworks spectaculars, character meet and greets, and shows. However, the park can be overwhelming and become quite crowded, even during the low season.",
-            "location": "Orlando, Florida",
-            "operating_hours":[
-                {
-                    "opening": 9,
-                    "closing": 10
-                }
-            ]
-        }
-    ],
-    "areas": [
-        {
+    "park-info": [{
+        "name": "Put Your Park Name Here",
+        "description": "Magic Kingdom is Walt Disney World's most popular destination, and is first on everyone's list of things to experience when they arrive in Central Florida. The park is full of great attractions like Seven Dwarfs Mine Train, Space Mountain, and Jungle Cruise, and features lots of entertainment including parades, fireworks spectaculars, character meet and greets, and shows. However, the park can be overwhelming and become quite crowded, even during the low season.",
+        "location": "Orlando, Florida",
+        "operating_hours": [{
+            "opening": 9,
+            "closing": 10
+        }]
+    }],
+    "areas": [{
             "id": 1,
             "name": "Main Street U.S.A.",
             "description": "Main Street is a Disneyfied turn-of-the-20th-century small-town American thoroughfare. Its buildings are real, not elaborate props. Attention to detail is exceptional: Furnishings and fixtures are true to the period. Along the street are shops, character-greeting venues, eating places, City Hall, and a fire station. Occasionally, horse-drawn trolleys, fire engines, and horseless carriages transport visitors along Main Street to the Central Plaza.",
@@ -56,20 +51,21 @@
             "colorTheme": "F2CF53"
         }
     ],
-"attractions": [
-        {
+    "attractions": [{
             "id": 1,
             "name": "Walt Disney World Railroad",
             "description": "Listen to the clamor of the engine, the chug of the wheels and the call of the whistle as you travel aboard the Walt Disney World Railroad. Offering convenient stops at Frontierland, Fantasyland and Main Street, U.S.A., it's the perfect way to preview the magic at Magic Kingdom park and take in the picturesque scenery.",
             "type_id": 1,
-            "area_id": 1
+            "area_id": 1,
+            "out_of_order": true
         },
         {
             "id": 2,
             "name": "Main Street Vehicles",
             "description": "Catch a nostalgic ride to Cinderella Castle or Town Square aboard a vintage vehicle. Board a classic horse-drawn car, omnibus, jitney or fire engine and sit back as you are ushered from one end of Main Street, U.S.A. to the other. Along the way, behold a bevy of 2- and 3-story-high, Victorian-themed shops and restaurants from a time and place long since passed.",
             "type_id": 1,
-            "area_id": 1
+            "area_id": 1,
+            "out_of_order": true
         },
         {
             "id": 3,
@@ -166,7 +162,10 @@
             "id": 16,
             "name": "Meet Disney Friends in Town Square",
             "description": "Some of your favorite Disney friends are here to greet you in the heart of Main Street, U.S.A",
-            "times": ["9:00AM", "4:00PM"],
+            "times": [
+                "9:00AM",
+                "4:00PM"
+            ],
             "type_id": 5,
             "area_id": 1
         },
@@ -174,7 +173,11 @@
             "id": 17,
             "name": "Meet Mickey at Town Square Theater",
             "description": "Mickey Mouse is in his rehearsal room, ready to meet his biggest fans. Discover props and posters from Mickey’s magical career in the theater and maybe even spot a disappearing dove or a rabbit coming out of a hat. The greatest magic of all happens when you get a hug from Mickey Mouse himself.",
-            "times": ["9:40AM", "12:20PM", "4:30PM"],
+            "times": [
+                "9:40AM",
+                "12:20PM",
+                "4:30PM"
+            ],
             "type_id": 5,
             "area_id": 1
         },
@@ -182,7 +185,12 @@
             "id": 18,
             "name": "Meet Tinker Bell at Town Square Theater",
             "description": "Step through the magical portal to join Tinker Bell as she showcases a collection of her treasures from the mainland. After spending time with a fairy, you too may wish you could fly away toward the second star to the right!",
-            "times": ["10:00AM", "1:00PM", "4:30PM", "7:00PM"],
+            "times": [
+                "10:00AM",
+                "1:00PM",
+                "4:30PM",
+                "7:00PM"
+            ],
             "type_id": 5,
             "area_id": 1
         },
@@ -205,28 +213,32 @@
             "name": "Swiss Family Treehouse",
             "description": "Cross a bridge at the foot of a large leafy tree and climb handcrafted wooden stairs as you explore the famed living quarters of the Swiss Family Robinson and learn of their island adventure.",
             "type_id": 1,
-            "area_id": 2
+            "area_id": 2,
+            "out_of_order": true
         },
         {
             "id": 22,
             "name": "Jungle Cruise",
             "description": "Trek to a forgotten tropical jungle outpost—home to suspended cargo nets, wooden crates and lanterns—and board a canopied tramp steamer for a tongue-in-cheek adventure led by a trusty skipper through some of the world’s most treacherous rivers.",
             "type_id": 1,
-            "area_id": 2
+            "area_id": 2,
+            "out_of_order": true
         },
         {
             "id": 23,
             "name": "Pirates of the Caribbean",
             "description": "Wander a meanderin’ alleyway within a Spanish fortress and board a small barge for a spellbinding high-seas adventure. Escape through a shadowy grotto past the ghostly catacombs of fallen pirates and swoop down a small rushing waterfall, your passageway to the Golden Age of Piracy. ",
             "type_id": 1,
-            "area_id": 2
+            "area_id": 2,
+            "out_of_order": false
         },
         {
             "id": 24,
             "name": "The Magic Carpets of Aladdin",
             "description": "Take off on a magical ride above a bustling bazaar aboard an enchanted carpet that you control. Climb aboard a colorful, 4-passenger vehicle and take off into the air as the strings of Middle Eastern music play overhead. ",
             "type_id": 1,
-            "area_id": 2
+            "area_id": 2,
+            "out_of_order": false
         },
         {
             "id": 25,
@@ -309,7 +321,11 @@
             "id": 36,
             "name": "Meet Characters from Aladdin in Adventureland",
             "description": "Encounter a whole new world of adventure as you enter into the marketplace. Princess Jasmine and Aladdin are pleased to make your acquaintance and weave stories of Agrabah under the shade of a colorful awning. Perhaps you’ll even share a tale with them of your adventures in this most magical of kingdoms.",
-            "times": ["10:20AM", "2:20PM", "6:30PM"],
+            "times": [
+                "10:20AM",
+                "2:20PM",
+                "6:30PM"
+            ],
             "type_id": 5,
             "area_id": 2
         },
@@ -317,7 +333,14 @@
             "id": 37,
             "name": "Captain Jack Sparrow's Pirate Tutorial",
             "description": "Boys and girls, gather ye ‘round! It’s time to be regaled by the scourge of the seven seas—Captain Jack Sparrow. Our favorite scoundrel is recruiting young “volunteers” to begin training. Raise your hand high if you want a life of adventure, and you might be picked! Captain Jack only selects maybe 4 wannabe scallywags for sword learnin'.",
-            "times": ["10:30AM", "11:30AM", "12:30PM", "2:30PM", "3:30PM", "4:30PM"],
+            "times": [
+                "10:30AM",
+                "11:30AM",
+                "12:30PM",
+                "2:30PM",
+                "3:30PM",
+                "4:30PM"
+            ],
             "type_id": 5,
             "area_id": 2
         },
@@ -326,42 +349,48 @@
             "name": "Big Thunder Mountain Railroad",
             "description": "As you begin your journey into the darkness of the tunnel, the train’s wheels chug back and forth across a rickety track. Swoop around turns and dip and drop into canyons and caves, darting through the ghost town of Tumbleweed.",
             "type_id": 1,
-            "area_id": 3
+            "area_id": 3,
+            "out_of_order": false
         },
         {
             "id": 39,
             "name": "Walt Disney World Railroad",
             "description": "Hear the prairie wind whisper sweet songs of the West as you chug from the frontier, around Magic Kingdom park, and back again. ",
             "type_id": 1,
-            "area_id": 3
+            "area_id": 3,
+            "out_of_order": true
         },
         {
             "id": 40,
             "name": "Splash Mountain",
             "description": "Hop inside a hollowed-out log and gently drift past rocky caves, vine-strewn swamps and sun-drenched meadows as you accompany happy-go-lucky Br’er Rabbit from his home in the Briar Patch on a search for his 'laughing place.' But be warned: Br’er Bear and Br’er Fox are in hot pursuit of the roaming rabbit and they’ll do anything they can to catch him!",
             "type_id": 1,
-            "area_id": 3
+            "area_id": 3,
+            "out_of_order": false
         },
         {
             "id": 41,
             "name": "Liberty Square Riverboat",
             "description": "Take off on a scenic half-mile adventure into the wilds of old America aboard a steam-powered paddler wheeler. Board the Colonial-American-inspired, 3-tiered Liberty Belle riverboat nestled in the heart of Liberty Square and embark on a relaxing journey around Tom Sawyer Island along the Rivers of America. ",
             "type_id": 1,
-            "area_id": 4
+            "area_id": 4,
+            "out_of_order": true
         },
         {
             "id": 42,
             "name": "Tom Saywer Island",
             "description": "Journey by log raft across the Rivers of America and discover an idyllic place influenced by the works of Mark Twain. Arrive at Tom’s Landing and embark on a self-guided expedition into the heart of early America.",
             "type_id": 1,
-            "area_id": 3
+            "area_id": 3,
+            "out_of_order": false
         },
         {
             "id": 43,
             "name": "The Haunted Mansion",
             "description": "Edge into a shadowy foyer and climb aboard a gloomy Doom Buggy for a supernatural journey through a labyrinth of haunted chambers. Glide past a casket-filled conservatory, a chilling séance room and a ghostly graveyard of singing specters as you attempt to find your way out. ",
             "type_id": 1,
-            "area_id": 4
+            "area_id": 4,
+            "out_of_order": true
         },
         {
             "id": 44,
@@ -493,7 +522,17 @@
             "id": 62,
             "name": "The Muppets Present... Great Moments in American History",
             "description": "Gather ‘round outside The Hall of Presidents as Kermit the Frog, Miss Piggy, Fozzie Bear, The Great Gonzo and James Jefferson, town crier of Liberty Square, bring America’s most hallowed stories to life as only they can—with an original song and plenty of Muppet mayhem thrown in.",
-            "times": ["9:30AM", "10:20AM", "10:55AM", "11:30AM", "12:00PM", "1:25PM", "2:00PM", "4:15PM", "4:45PM"],
+            "times": [
+                "9:30AM",
+                "10:20AM",
+                "10:55AM",
+                "11:30AM",
+                "12:00PM",
+                "1:25PM",
+                "2:00PM",
+                "4:15PM",
+                "4:45PM"
+            ],
             "type_id": 5,
             "area_id": 4
         },
@@ -509,49 +548,56 @@
             "name": "It's a Small World",
             "description": "Sing along to the classic anthem of world peace during a delightful musical boat tour hosted by the children of the world. From a colorful dock, climb aboard a cozy boat and set sail along the Seven Seaways Waterway on a 10-minute journey. ",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": true
         },
         {
             "id": 65,
             "name": "Peter Pan's Flight",
             "description": "Sail high into the moonlit sky with Peter Pan. Board a colorful galleon and, with the help of some pixie dust, embark on a high-flying adventure, passing many of the unforgettable settings and scenes made famous in Disney’s animated film, Peter Pan. ",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 66,
             "name": "Prince Charming Regal Carrousel",
             "description": "Make you way beneath a vibrant medieval tent within the Castle Courtyard and select one of 90 wood-carved ornate horses—or one intricately carved chariot. Bedecked in golden helmets, decorative shields and flowing flower garlands and feathers, each magnificent steed is unique.",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 67,
             "name": "The Many Adventures of Winnnie the Pooh",
             "description": "Glide and bounce and swirl through some of the most popular scenes and settings of Winnie the Pooh. Board a giant Hunny Pot and get lost in the pages of A.A. Milne’s classic tales, as you journey to Hundred Acre Wood. ",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 68,
             "name": "Seven Dwarfs Mine Train",
             "description": "Follow a winding path through the Enchanted Forest and make your way inside the rocky tunnel of an age-old mountain. Hop into a rustic mine train—hewn together with wood and metal bands—and wind your way up a steep hill.",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 69,
             "name": "Under the Sea - Journey of the Little Mermaid",
             "description": "Enter Prince Eric’s castle through an underground cavern at low tide, board a colorful clamshell and take the plunge. You’ll become part of a world where mermaids dream of dancing, fish form a conga line, evil sea witches ensnare souls and unlikely pairs fall in love… and live happily ever after.",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": true
         },
         {
             "id": 70,
             "name": "Mad Tea Party",
             "description": "Pour yourself into an oversized teacup and twirl quickly or slowly amid a menagerie of color and sound. Celebrate your “un-birthday” in Wonderland as you sail back and forth around a towering teapot beneath a windswept party of paper lanterns, as festive music fills the air. ",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 71,
@@ -662,7 +708,12 @@
             "id": 86,
             "name": "Meet Peter Pan in Fantasyland",
             "description": "Spend some time with Peter Pan before he returns to Never Land. Peter may tell tales of his exploits with Tinker Bell, the Lost Boys or Captain Hook. He’d love to hear one of your stories, too.",
-            "times": ["11:00AM", "1:00PM", "5:00PM", "8:00PM"],
+            "times": [
+                "11:00AM",
+                "1:00PM",
+                "5:00PM",
+                "8:00PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -670,7 +721,12 @@
             "id": 87,
             "name": "Meet Cinderella and Elena at Princess Fairytale Hall",
             "description": "Enjoy a dazzling encounter as you’re greeted by Cinderella and her princess friend Elena in an enchanting royal setting. Cinderella elegantly welcomes one and all into a “happily ever after” filled with family, friends and fun—and that includes you! As Elena readies herself to rule the enchanted kingdom of Avalor, she creates her own hero’s journey—stopping along the way to meet Disney Princesses and Guests at Walt Disney World Resort.",
-            "times": ["10:15AM", "2:35PM", "4:40PM", "7:00PM"],
+            "times": [
+                "10:15AM",
+                "2:35PM",
+                "4:40PM",
+                "7:00PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -678,7 +734,12 @@
             "id": 88,
             "name": "Meet Rapunzel and Tiana at Princess Fairytale Hall",
             "description": "Let your hair down for a magical meeting with Rapunzel. She is very excited to meet you and share stories of her many adventures… and maybe even hear about some of yours too! Swap a special story with Princess Tiana and make a wish upon the evening star. Having recently fulfilled her lifelong ambition of opening her very own restaurant—not to mention spending time as a frog—Tiana is delighted to make your acquaintance and discover a new friend, especially one whose dreams are as big as her own.",
-            "times": ["9:45AM", "12:15PM", "4:40PM", "7:20PM"],
+            "times": [
+                "9:45AM",
+                "12:15PM",
+                "4:40PM",
+                "7:20PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -686,7 +747,12 @@
             "id": 89,
             "name": "Meet Gaston near His Tavern",
             "description": "The townsfolk at Gaston’s Tavern are awed and inspired by the handsome ham. He is happy to provide his admirers with autographs, pictures and seemingly endless tales about himself.",
-            "times": ["11:10AM", "2:10PM", "5:45PM", "9:00PM"],
+            "times": [
+                "11:10AM",
+                "2:10PM",
+                "5:45PM",
+                "9:00PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -702,7 +768,14 @@
             "id": 91,
             "name": "Meet Tigger and Friends near The Many Adventures of Winnie the Pooh",
             "description": "Spend time with friends in a shady place in the Hundred Acre Wood. Winnie the Pooh and Tigger always love being with new friends and old, sharing hugs and maybe even a smackerel of honey.",
-            "times": ["9:50AM", "10:20AM", "11:55pM", "1:25PM", "3:00PM", "6:15PM"],
+            "times": [
+                "9:50AM",
+                "10:20AM",
+                "11:55pM",
+                "1:25PM",
+                "3:00PM",
+                "6:15PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -710,7 +783,15 @@
             "id": 92,
             "name": "Meet Alice in Wonderland at the Mad Tea Party",
             "description": "You’ll feel as though you’ve followed Alice down the rabbit hole when you encounter these familiar faces. Of course, there’s no telling who you might find at this peculiar party—curiouser and curiouser.",
-            "times": ["9:30AM", "10:20AM", "11:55AM", "1:25PM", "2:00PM", "4:15PM", "4:45PM"],
+            "times": [
+                "9:30AM",
+                "10:20AM",
+                "11:55AM",
+                "1:25PM",
+                "2:00PM",
+                "4:15PM",
+                "4:45PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -718,7 +799,14 @@
             "id": 93,
             "name": "Meet Merida at Fairytale Garden",
             "description": "Join Merida and her clan in an engaging “play and greet” experience. Inside Fairytale Garden, you can practice archery, color your own “tapestry” of Merida as well as her faithful horse, Angus, and spend some time with Merida herself! ",
-            "times": ["9:40AM", "11:40AM", "1:55PM", "4:15PM", "4:45PM", "7:00PM"],
+            "times": [
+                "9:40AM",
+                "11:40AM",
+                "1:55PM",
+                "4:15PM",
+                "4:45PM",
+                "7:00PM"
+            ],
             "type_id": 5,
             "area_id": 5
         },
@@ -727,21 +815,24 @@
             "name": "Dumbo the Flying Elephant",
             "description": "Hop atop Dumbo and take off into the air on a joyful journey amid the jubilant sounds of carnival music. Based on Disney’s 1941 animated classic Dumbo, Dumbo the Flying Elephant invites you to accompany everybody’s favorite circus elephant as he discovers his unique ability to fly. ",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 95,
             "name": "Walt Disney World Railroad",
             "description": "Hop aboard this old-fashioned locomotive where dreams come true for a scenic tour of Magic Kingdom park. ",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": false
         },
         {
             "id": 96,
             "name": "The Barnstormer",
             "description": "The flying spectacle begins as your plane gracefully ascends to the top of a nearby wooden observation tower. Then, brace yourself as you rapidly swoop down and around the bustling barnyard, following the flight path made famous by The Grand Goofini. Dart around gentle bends, peel past trees and soar through the broken section of a nearby billboard before “landing” safely back inside the barn during the grand, fun-filled finale.",
             "type_id": 1,
-            "area_id": 5
+            "area_id": 5,
+            "out_of_order": true
         },
         {
             "id": 97,
@@ -762,49 +853,56 @@
             "name": "Tomorrowland Speedway",
             "description": "Stroll past classic racing marquees and make your way to the racing pit, home to growling, multi-colored speedsters. Designed to look like the famed Indiana Motor Speedway, the racetrack includes well-known backdrops of the motoring world, including the Scoring Pylon, Gasoline Alley and the Yard of Bricks.",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": true
         },
         {
             "id": 100,
             "name": "Stitch's Great Escape!",
             "description": "Amid a row of blinking monitors, begin your intergalactic training session with an eye-opening welcome video and discover what it means to be a guard with the Galactic Federation Prisoner Teleport Center.",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": false
         },
         {
             "id": 101,
             "name": "Buzz Lightyear's Space Ranger Spin",
             "description": "Take aim with your space cannon and fire an invisible infrared laser at a constellation of “Z” insignias. Following an introductory mission briefing with Buzz Lightyear, board an XP-37 star cruiser, take hold of the onboard cannon and begin your space crusade into the Gamma Quadrant",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": true
         },
         {
             "id": 102,
             "name": "Tomorrowland Transit Authority PeopleMover",
             "description": "Take off from Rockettower Plaza for an elevated ride into the world of tomorrow. Ascend a conveyor belt to an open-air loading dock and board a moving tram for a leisurely outdoor and indoor voyage through Tomorrowland. ",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": true
         },
         {
             "id": 103,
             "name": "Astro Orbiter",
             "description": "As you take control of your very own rocket, you are in command of your flight. Control how high you fly by pulling or pushing the lever inside the ship.",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": true
         },
         {
             "id": 104,
             "name": "Walt Disney's Carousel of Progress",
             "description": "Look back to the past and get a glimpse of the future at Walt Disney’s Carousel of Progress, a fascinating 21-minute Audio-Animatronics stage show celebrating the evolution of technology throughout the 20th century and today. ",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": true
         },
         {
             "id": 105,
             "name": "Space Mountain",
             "description": "Navigate a shadowy, neon-lit space station and make your way to a bustling Control Tower, passing a constellation of glowing astronaut training stations along the way. Inside a futuristic launch pad, board a sleek rocket-shaped vehicle and prepare yourself for a high-flying adventure into deep space.",
             "type_id": 1,
-            "area_id": 6
+            "area_id": 6,
+            "out_of_order": true
         },
         {
             "id": 106,
@@ -894,7 +992,17 @@
             "id": 118,
             "name": "Meet an Out of this World Friend in Tomorrowland",
             "description": "After defeating the evil Emperor Zurg on Buzz Lightyear Space Ranger Spin, celebrate your victory with Buzz himself. Captain Lightyear is waiting to meet you at an outpost not far from Star Command Headquarters. Report to Buzz for a handshake, autograph and a photo of your out-of-this-world visit.",
-            "times": ["9:30AM", "10:20AM", "10:55AM", "11:30AM", "12:00PM", "1:25PM", "2:00PM", "4:15PM", "4:45PM"],
+            "times": [
+                "9:30AM",
+                "10:20AM",
+                "10:55AM",
+                "11:30AM",
+                "12:00PM",
+                "1:25PM",
+                "2:00PM",
+                "4:15PM",
+                "4:45PM"
+            ],
             "type_id": 2,
             "area_id": 6
         },
@@ -909,7 +1017,10 @@
             "id": 120,
             "name": "Main Street Philharmonic at Main Street, U.S.A.",
             "description": "Drum roll, trumpet call! Marching on Main Street, U.S.A. clad in bright red and white uniforms—the band is a site to behold! Performing old-school marches, big band hits and Disney classics, they rock out a mix.",
-            "times": ["1:40PM", "3:40PM"],
+            "times": [
+                "1:40PM",
+                "3:40PM"
+            ],
             "type_id": 8,
             "area_id": 1
         },
@@ -917,7 +1028,9 @@
             "id": 121,
             "name": "Main Street Philharmonic at Storybook Circus",
             "description": "Drum roll, trumpet call! Marching at Storybook Circus clad in bright red and white uniforms—the band is a site to behold! Performing old-school marches, big band hits and Disney classics, they rock out a mix.",
-            "times": ["12:45PM"],
+            "times": [
+                "12:45PM"
+            ],
             "type_id": 8,
             "area_id": 5
         },
@@ -925,7 +1038,11 @@
             "id": 122,
             "name": "Move It! Shake It! Dance & Play It! Street Party",
             "description": "Get ready to party it up when you see giant gift boxes circle in front of Cinderella Castle—their presence means the shindig is about to begin. Use your camera to capture yourself as you bust a move in the middle of the celebration.",
-            "times": ["12:30PM", "5:45PM", "7:15PM"],
+            "times": [
+                "12:30PM",
+                "5:45PM",
+                "7:15PM"
+            ],
             "type_id": 8,
             "area_id": 7
         },
@@ -933,7 +1050,13 @@
             "id": 123,
             "name": "Mickey's Roypal Friendship Faire",
             "description": "It takes a whole enchanted kingdom to put on this all-new, live stage show at Magic Kingdom park—and you’re cordially invited! In preparation for this joyous festival, Mickey and friends have ventured far and wide to gather Disney pals from all over to star in a royal friendship faire.",
-            "times": ["10:30AM", "11:30AM", "1:00PM", "2:00PM", "4:15PM"],
+            "times": [
+                "10:30AM",
+                "11:30AM",
+                "1:00PM",
+                "2:00PM",
+                "4:15PM"
+            ],
             "type_id": 8,
             "area_id": 7
         },
@@ -941,7 +1064,15 @@
             "id": 124,
             "name": "Casey's Corner Pianist",
             "description": "Featuring catchy, lively and foot-tapping rhythms, it’s the type of music that invites you to sing along. When folks start to gather around, don’t be surprised if they join in at the top of their lungs. The show is a crowd-pleaser.",
-            "times": ["12:10PM", "1:20PM", "2:35PM", "3:40PM", "4:40PM", "5:20PM", "6:15PM"],
+            "times": [
+                "12:10PM",
+                "1:20PM",
+                "2:35PM",
+                "3:40PM",
+                "4:40PM",
+                "5:20PM",
+                "6:15PM"
+            ],
             "type_id": 8,
             "area_id": 1
         },
@@ -949,7 +1080,13 @@
             "id": 125,
             "name": "Citizens of Main Street",
             "description": "Make way for the horseless carriage! And say 'How d'you do' to some of the most fascinating folks you'll ever meet. Smartly stylish in their early 20th-century finery, these larger-than-life small-town denizens can be spotted along Main Street throughout the day. ",
-            "times": ["9:00AM", "10:00AM", "11:00AM", "12:00PM", "1:00PM"],
+            "times": [
+                "9:00AM",
+                "10:00AM",
+                "11:00AM",
+                "12:00PM",
+                "1:00PM"
+            ],
             "type_id": 8,
             "area_id": 1
         },
@@ -957,7 +1094,15 @@
             "id": 126,
             "name": "The Dapper Dans",
             "description": "Gather ‘round when the Dapper Dans come to town, the finest barbershop quartet in a 2-block radius! Wearing their colorful pinstriped suits, straw hats and taps, this 4-man group sings a soulful a cappella Americana and Disney tunes. ",
-            "times": ["9:00AM", "9:45AM", "11:05AM", "11:45AM", "1:00PM", "1:40PM", "3:45PM"],
+            "times": [
+                "9:00AM",
+                "9:45AM",
+                "11:05AM",
+                "11:45AM",
+                "1:00PM",
+                "1:40PM",
+                "3:45PM"
+            ],
             "type_id": 8,
             "area_id": 1
         },
@@ -965,7 +1110,9 @@
             "id": 127,
             "name": "Let the Magic Begin",
             "description": "Just prior to park opening, you’re invited to make way through Main Street, U.S.A. and down to the front of Cinderella Castle. Soon, the sound of a trumpet fanfare will burst through the morning air, signaling the arrival of a very important procession, a.k.a. the Royal Herald.",
-            "times": ["8:55AM"],
+            "times": [
+                "8:55AM"
+            ],
             "type_id": 8,
             "area_id": 7
         },
@@ -973,7 +1120,11 @@
             "id": 128,
             "name": "Main Street Trolley Show",
             "description": "Dressed in costumes from a bygone era, 12 performers ride a trolley until it stops for them to break out in song and dance. They put on show for whoever is wandering the street. ",
-            "times": ["9:20AM", "10:10AM", "12:00PM"],
+            "times": [
+                "9:20AM",
+                "10:10AM",
+                "12:00PM"
+            ],
             "type_id": 8,
             "area_id": 1
         },
@@ -981,7 +1132,13 @@
             "id": 129,
             "name": "The Royal Majesty Makers",
             "description": "The Royal Majesty Makers, official consultants of Cinderella’s court, acquaint boys and girls with the genteel ways of aristocracy as they entertain audiences in the Castle Courtyard in Fantasyland.",
-            "times": ["9:50AM", "10:50AM", "11:50AM", "12:50PM", "1:50PM"],
+            "times": [
+                "9:50AM",
+                "10:50AM",
+                "11:50AM",
+                "12:50PM",
+                "1:50PM"
+            ],
             "type_id": 8,
             "area_id": 5
         },
@@ -989,7 +1146,9 @@
             "id": 130,
             "name": "Once Upon A Time",
             "description": "Join animated hosts Mrs. Potts and her son Chip for a captivating bedtime story that recounts cherished moments from tales that begin with the classic line—“Once Upon A Time.”",
-            "times": ["9:30PM"],
+            "times": [
+                "9:30PM"
+            ],
             "type_id": 8,
             "area_id": 7
         },
@@ -997,13 +1156,14 @@
             "id": 131,
             "name": "Wishes",
             "description": "Join Jiminy Cricket and the Blue Fairy as they celebrate the power of believing. Your heart will soar as you hear a medley of famous Disney songs and the voices of Disney characters in the biggest fireworks extravaganza in Magic Kingdom park history! ",
-            "times": ["9:45PM"],
+            "times": [
+                "9:45PM"
+            ],
             "type_id": 8,
             "area_id": 7
         }
     ],
-"attraction_types":[
-        {
+    "attraction_types": [{
             "id": 1,
             "name": "ride"
         },
@@ -1034,6 +1194,177 @@
         {
             "id": 8,
             "name": "special event"
+        }
+    ],
+    "maintenance_tickets": [{
+            "attraction_id": 1,
+            "maintenance_date": "Fri Nov 03 2017 13:00:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
+        },
+        {
+            "attraction_id": 1,
+            "maintenance_date": "Sat Nov 04 2017 13:20:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
+        },
+        {
+            "attraction_id": 2,
+            "maintenance_date": "Sat Nov 04 2017 11:00:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 3
+        },
+        {
+            "attraction_id": 2,
+            "maintenance_date": "Sat Nov 04 2017 14:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 2,
+            "maintenance_date": "Mon Nov 06 2017 20:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 2,
+            "maintenance_date": "Tue Nov 07 2017 20:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 2,
+            "maintenance_date": "Sat Nov 11 2017 9:00:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 3
+        },
+        {
+            "attraction_id": 21,
+            "maintenance_date": "Sat Nov 11 2017 9:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 22,
+            "maintenance_date": "Sat Nov 04 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 3
+        },
+        {
+            "attraction_id": 39,
+            "maintenance_date": "Mon Nov 06 2017 17:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
+        },
+        {
+            "attraction_id": 41,
+            "maintenance_date": "Tue Nov 07 2017 20:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 43,
+            "maintenance_date": "Wed Nov 08 2017 19:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1.5
+        },
+        {
+            "attraction_id": 43,
+            "maintenance_date": "Sat Nov 11 2017 9:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2.5
+        },
+        {
+            "attraction_id": 64,
+            "maintenance_date": "Thu Nov 09 2017 19:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 69,
+            "maintenance_date": "Sat Nov 11 2017 9:15:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2.5
+        },
+        {
+            "attraction_id": 96,
+            "maintenance_date": "Mon Nov 06 2017 17:00:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2.5
+        },
+        {
+            "attraction_id": 99,
+            "maintenance_date": "Sat Nov 11 2017 9:15:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 101,
+            "maintenance_date": "Sat Nov 04 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 101,
+            "maintenance_date": "Sun Nov 05 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 101,
+            "maintenance_date": "Sat Nov 11 2017 9:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
+        },
+        {
+            "attraction_id": 102,
+            "maintenance_date": "Sat Nov 04 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 102,
+            "maintenance_date": "Sat Nov 11 2017 9:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 0.5
+        },
+        {
+            "attraction_id": 103,
+            "maintenance_date": "Sat Nov 04 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Sat Nov 04 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Sun Nov 05 2017 12:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 3
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Mon Nov 06 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Tues Nov 07 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 0.5
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Wed Nov 08 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Thu Nov 09 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Fri Nov 10 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 104,
+            "maintenance_date": "Mon Nov 11 2017 9:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 105,
+            "maintenance_date": "Thu Nov 09 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 1
+        },
+        {
+            "attraction_id": 105,
+            "maintenance_date": "Fri Nov 10 2017 18:30:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 3
+        },
+        {
+            "attraction_id": 105,
+            "maintenance_date": "Sat Nov 11 2017 9:20:00 GMT-0500 (CDT)",
+            "maintenance_duration_hours": 2
         }
     ]
 }
