@@ -12,29 +12,40 @@ const getParkAttractions = (query) => {
     $.ajax(`${firebaseKey.databaseURL}/areas.json`).done((data) => {
       resolve(data);
       areas = data;
+      console.log("area",areas);
     }).fail((error) => {
       reject(error);
     });
   });
 };
 
+
+
+
 const getAreas = () => {
   return areas;
 };
 
-const showResults = (themeParkArray) => {
-  dom.domString();
+const showResults = () => {
+  dom.domString(areas);
 
 };
 
+
 const setKey = (apiKey) => {
-  firebaseKey = apiKey;
+  firebaseKey = apiKey; 
+  initializer();
 };
 
 const initializer = () => {
-    getParkAttractions();  
+    getParkAttractions().then((result)=>{
+      dom.domString(areas); 
+      console.log("results in initializer",result);
+    }).catch((error)=>{
+      console.log("error in initializer", error);
+    });
 };
 
 
 
-module.exports = {initializer, getParkAttractions, setKey, showResults, getAreas};
+module.exports = {initializer, setKey, showResults, getAreas};

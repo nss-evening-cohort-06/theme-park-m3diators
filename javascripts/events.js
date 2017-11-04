@@ -23,10 +23,10 @@ const searchAttractions = (query) => {
 	console.log("hello", query);
   dataPage.getParkAttractions(query).then((data) => {
     dataPage.showResults(data);
-    console.log("searchAttractions", dataPage);
   }).catch((error) => {
     console.log("error in searchAttractions", error);
   });
+  dom.domString(query);
 };
 
 
