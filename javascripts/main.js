@@ -10,3 +10,6 @@ const events = require('./events');
 
 events.pressEnter();
 
+$(document).ready(() => {
+	dataPage.initializer();
+});
