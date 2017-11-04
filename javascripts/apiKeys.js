@@ -1,7 +1,7 @@
 "use strict";
 
 
-const data = require('./data');
+const dataPage = require('./data');
 
 const apiKeys = () => {
   return new Promise((resolve, reject) => {
@@ -16,7 +16,7 @@ const apiKeys = () => {
 const retrieveKeys = () => {
   apiKeys().then((results) => {
     console.log("apikeys", results);
-    data.setKey(results);
+    dataPage.setKey(results);
     firebase.initializeApp(results);
   }).catch((error) => {
     console.log("error in retrieve keys", error);

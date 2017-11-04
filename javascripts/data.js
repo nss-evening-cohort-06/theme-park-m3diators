@@ -23,8 +23,13 @@ const getAreas = () => {
 };
 
 const showResults = (themeParkArray) => {
+
   dom.domString();
   //console.log("dom", showResults);
+
+  // dom.domString();
+  // clickevents 
+  // search event
 };
 
 
