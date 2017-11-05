@@ -2,12 +2,12 @@
 <html>
 <head>
 	<title>Theme Park</title>
-<!--   <link rel="stylesheet" type="text/css" href="https://bootswatch.com/superhero/bootstrap.min.css">
- -->  <link rel="stylesheet" type="text/css" href="./lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/superhero/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="./styles/main.css">
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -19,14 +19,14 @@
       <a class="navbar-brand" href="#">The Indecisive Park</a>
     </div>
 
-    
-      <div class="input-group input-group-lg col-xs-6 col-xs-offset-3">
-      	<span class="input-group-addon glyphicon glyphicon-search" aria-hidden="true"></span>
-      	<input type="text" class="form-control" placeholder="Search something in park, or something else, it's up to you." id="searchBar">
-      </div>
-      
-  </div>
+     <div class="input-group input-group-lg col-xs-6 col-xs-offset-3">
+   <input type="text" class="form-control" placeholder="Search something in park or something else. You choose." id="searchBar">
+   <span class="input-group-btn" aria-hidden="true"">
+        <button class="btn btn-default" type="button">Search</button>
+   </span>
+</div>
 </nav>
+
 	<div id = "parkContainer"></div>
 
 	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>

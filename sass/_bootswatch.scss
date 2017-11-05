@@ -1,0 +1,60 @@
+// Variables ===================================================================
+
+$web-font-path: "https://fonts.googleapis.com/css?family=Lato:300,400,700" !default;
+@import url($web-font-path);
+
+// Navbar ======================================================================
+
+.bg-primary {
+  background-color: $gray-200 !important;
+}
+
+// .navbar {
+//   font-size: $font-size-sm;
+// }
+
+// Buttons =====================================================================
+
+.btn {
+
+  &-info,
+  &-warning {
+    color: $white;
+  }
+}
+
+// Navs ========================================================================
+
+.nav-tabs,
+.nav-pills {
+  .nav-link,
+  .nav-link:hover {
+    color: $body-color;
+  }
+
+  .nav-link.disabled {
+    color: $nav-link-disabled-color;
+  }
+}
+
+.page-link:hover,
+.page-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+// Body
+
+body {
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $gray-100;
+  text-align: left;
+  background-color: $body-bg;
+}
+
+
+
