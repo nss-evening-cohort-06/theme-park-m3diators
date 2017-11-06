@@ -45,6 +45,9 @@ const showResults = () => {
 
 };
 
+const showAttractions = () => {
+  dom.attractionDomString(attractions);
+};
 
 const setKey = (apiKey) => {
   firebaseKey = apiKey; 

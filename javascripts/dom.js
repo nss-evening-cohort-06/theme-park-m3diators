@@ -22,4 +22,20 @@ const printToDom = (strang) => {
 	$('#parkContainer').html(strang);
 };
 
-module.exports = {domString};
+const attractionDomString = (attractionArray) => {
+	let attractionString = '';
+	for (let j = 0; j < attractionArray.length; j++ ) {
+		attractionString += `<div>`;
+		attractionString += `<h4>${attractionArray[j].name}</h4>`;
+		attractionString += `<p><${attractionArray[j].description}/p>`;
+		attractionString += `</div>`;
+	}
+	printAttractions(attractionString);
+};
+
+const printAttractions = (strang) => {
+	$("#attractionContainer").append(strang);
+};
+
+
+module.exports = {domString, attractionDomString};
