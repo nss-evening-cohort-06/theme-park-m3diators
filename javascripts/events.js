@@ -31,5 +31,14 @@ const searchAttractions = (query) => {
   
 };
 
+//Copyright will display in copyright ID. 
+const date = new Date();
+const month = date.getMonth()+1;
+const day = date.getDate();
+const outputDate = '&copy ' + date.getFullYear() + '/' + (month < 10 ? '0': '') + month +
+				'/' + (day < 10 ? '0' : '') + day + ', The Indecisive Park';				
+
+$('#copyright').html(outputDate);				
+
 
 module.exports = {pressEnter, searchAttractions};
