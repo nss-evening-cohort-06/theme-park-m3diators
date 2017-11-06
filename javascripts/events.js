@@ -46,5 +46,4 @@ $('#copyright').html(outputDate);
 
 
 
-
 module.exports = {pressEnter, searchAttractions, clickAreaToSeeAttractions};
