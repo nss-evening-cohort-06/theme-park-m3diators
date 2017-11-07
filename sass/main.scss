@@ -2,6 +2,12 @@
 @import 'bootswatch';
 @import url($web-font-path);
 
-.areaCard {
+.card {
 	height: 350px;
+}
+
+#attractionContainer {
+	height: auto;
+	width: 30%;
+	border: solid black 5px;
 }

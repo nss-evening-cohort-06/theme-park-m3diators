@@ -32,8 +32,17 @@ const getParkAttractions = (query) => {
   });
 };
 
-const getAttractions = () => {
-  return attractions;
+
+
+
+
+const searchAttractions = (query) => {
+ console.log("hello", query);
+  getParkAttractions(query).then((data) => {
+  showAttractions(data); //will need to define new domFunction to print attractions;
+  }).catch((error) => {
+    console.log("error in searchAttractions", error);
+  });
 };
 
 const getAreas = () => {
@@ -42,7 +51,6 @@ const getAreas = () => {
 
 const showResults = () => {
   dom.domString(areas);
-
 };
 
 const showAttractions = () => {
@@ -64,5 +72,4 @@ const initializer = () => {
 };
 
 
-
-module.exports = {getParkAttractions, initializer, setKey, showResults, getAreas};
+module.exports = {searchAttractions, getParkAttractions, initializer, setKey, showResults, getAreas, showAttractions};
