@@ -1,15 +1,15 @@
 "use strict";
 
-const domString = (themeParkArray) => {
+const domString = (areaArray) => {
 	let parkString = '';
-	console.log("theme park array",themeParkArray);
-	for (let i= 0; i < themeParkArray.length; i++){
-		
-		let areaObj = themeParkArray[i];
+	console.log("theme park array",areaArray);
+	for (let i= 0; i < areaArray.length; i++){
+		let areaObj = areaArray[i];
+		console.log("areaObj", areaObj);
 				if (i >= 6) {
-					parkString += ` <div class="col-md-4 col-md-offset-8 card" id="thumbnail">`;
+					parkString += ` <div class="col-md-4 col-md-offset-8 card" id="${areaObj.id}">`;
 				} else {
-					parkString += `<div class="col-md-4 card" id="thumbnail">`;
+					parkString += `<div class="col-md-4 card" id="${areaObj.id}">`;
 				}	
 				parkString += `<h1>${areaObj.name}</h1>`;
 				parkString += `<p>${areaObj.description}</p>`;

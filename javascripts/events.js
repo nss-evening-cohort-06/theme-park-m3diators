@@ -19,9 +19,10 @@ const pressEnter = (press) => {
 };
 
 const clickAreaToSeeAttractions = () => {
-	$(document).on("click", '#card', (e) => {
+	console.log("attractions event");
+	$(document).on("click", '.card', (e) => {
 		dataPage.searchAttractions();
-		console.log("attractions event", e);
+		console.log("attractions event", e.target.closest(".card").id);
 	}); 	
 };
 
