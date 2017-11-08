@@ -7,3 +7,5 @@ dist/app.js
 styles/main.css
 
 db/firebaseApi.json
+
+public
