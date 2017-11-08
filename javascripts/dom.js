@@ -32,7 +32,9 @@ const attractionDomString = (attractionArray) => {
 };
 
 const printAttractions = (strang) => {
+	$("#attractionContainer").empty();
 	$("#attractionContainer").html(strang);
+
 };
 
 module.exports = {domString, attractionDomString};

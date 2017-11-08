@@ -4,7 +4,7 @@ let firebaseKey;
 const dom = require('./dom');
 
 let areas = [];
-let attractions = [];
+
 
 const getParkAreas = (query) => {
   return new Promise((resolve, reject) => {
@@ -18,6 +18,7 @@ const getParkAreas = (query) => {
 };
 
 const getParkAttractions = (areaId) => {
+  let attractions = [];
   return new Promise((resolve, reject) => {
     $.ajax(`${firebaseKey.databaseURL}/attractions.json?orderBy="area_id"&equalTo=${areaId}`).done((data) => {
       Object.keys(data).forEach((key) => {
