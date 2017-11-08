@@ -1,15 +1,15 @@
 "use strict";
 
-const domString = (themeParkArray) => {
+const domString = (areaArray) => {
 	let parkString = '';
-	console.log("theme park array",themeParkArray);
-	for (let i= 0; i < themeParkArray.length; i++){
-		let areaObj = themeParkArray[i];
-				//parkString += `<div class="row">`;
+	console.log("theme park array",areaArray);
+	for (let i= 0; i < areaArray.length; i++){
+		let areaObj = areaArray[i];
+		console.log("areaObj", areaObj);
 				if (i >= 6) {
-					parkString += ` <div class="col-md-4 col-md-offset-8 areaCard">`;
+					parkString += ` <div class="col-md-4 col-md-offset-8 card" id="${areaObj.id}">`;
 				} else {
-					parkString += `<div class="col-md-4 areaCard">`;
+					parkString += `<div class="col-md-4 card" id="${areaObj.id}">`;
 				}	
 				parkString += `<h1>${areaObj.name}</h1>`;
 				parkString += `<p>${areaObj.description}</p>`;
@@ -25,7 +25,7 @@ const printToDom = (strang) => {
 const attractionDomString = (attractionArray) => {
 	let attractionString = '';
 	for (let j = 0; j < attractionArray.length; j++ ) {
-		attractionString += `<div>`;
+		attractionString += `<div id="attractionCard">`;
 		attractionString += `<h4>${attractionArray[j].name}</h4>`;
 		attractionString += `<p><${attractionArray[j].description}/p>`;
 		attractionString += `</div>`;

@@ -8,5 +8,7 @@ const events = require('./events');
 $(document).ready(() => {
 	firebaseApi.retrieveKeys();
 	events.pressEnter();
-
+	events.clickAreaToSeeAttractions();
 });
+
+
