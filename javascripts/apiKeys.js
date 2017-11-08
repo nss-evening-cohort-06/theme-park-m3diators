@@ -15,7 +15,6 @@ const apiKeys = () => {
 
 const retrieveKeys = () => {
   apiKeys().then((results) => {
-    console.log("apikeys", results);
     dataPage.setKey(results);
     firebase.initializeApp(results);
   }).catch((error) => {

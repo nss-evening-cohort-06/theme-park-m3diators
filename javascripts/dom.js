@@ -2,10 +2,8 @@
 
 const domString = (areaArray) => {
 	let parkString = '';
-	console.log("theme park array",areaArray);
 	for (let i= 0; i < areaArray.length; i++){
 		let areaObj = areaArray[i];
-		console.log("areaObj", areaObj);
 				if (i >= 6) {
 					parkString += ` <div class="col-md-4 col-md-offset-8 card" id="${areaObj.id}">`;
 				} else {
@@ -27,15 +25,14 @@ const attractionDomString = (attractionArray) => {
 	for (let j = 0; j < attractionArray.length; j++ ) {
 		attractionString += `<div id="attractionCard">`;
 		attractionString += `<h4>${attractionArray[j].name}</h4>`;
-		attractionString += `<p><${attractionArray[j].description}/p>`;
+		attractionString += `<p>${attractionArray[j].description}</p>`;
 		attractionString += `</div>`;
 	}
 	printAttractions(attractionString);
 };
 
 const printAttractions = (strang) => {
-	$("#attractionContainer").append(strang);
+	$("#attractionContainer").html(strang);
 };
-
 
 module.exports = {domString, attractionDomString};

@@ -6,40 +6,33 @@ const dom = require('./dom');
 let areas = [];
 let attractions = [];
 
-
-
 const getParkAreas = (query) => {
   return new Promise((resolve, reject) => {
     $.ajax(`${firebaseKey.databaseURL}/areas.json`).done((data) => {
-      resolve(data);
       areas = data;
-      console.log("area", areas);
-    }).fail((error) => {
-      reject(error);
-    });
-  });
-};
-
-const getParkAttractions = () => {
-  return new Promise((resolve, reject) => {
-    $.ajax(`${firebaseKey.databaseURL}/attractions.json`).done((data) => {
       resolve(data);
-      attractions = data;
-      console.log("attractions", attractions);
     }).fail((error) => {
       reject(error);
     });
   });
 };
 
-
-
-
+const getParkAttractions = (areaId) => {
+  return new Promise((resolve, reject) => {
+    $.ajax(`${firebaseKey.databaseURL}/attractions.json?orderBy="area_id"&equalTo=${areaId}`).done((data) => {
+      Object.keys(data).forEach((key) => {
+        attractions.push(data[key]);
+      });
+      resolve(attractions);
+    }).fail((error) => {
+      reject(error);
+    });
+  });
+};
 
 const searchAttractions = (areaId) => {
- console.log("areaId", areaId);
   getParkAttractions(areaId).then((data) => {
-  showAttractions(data); //will need to define new domFunction to print attractions;
+  dom.attractionDomString(data); 
   }).catch((error) => {
     console.log("error in searchAttractions", error);
   });
@@ -53,10 +46,6 @@ const showResults = () => {
   dom.domString(areas);
 };
 
-const showAttractions = () => {
-  dom.attractionDomString(attractions);
-};
-
 const setKey = (apiKey) => {
   firebaseKey = apiKey; 
   initializer();
@@ -65,11 +54,9 @@ const setKey = (apiKey) => {
 const initializer = () => {
     getParkAreas().then((result)=>{
       dom.domString(areas); 
-      console.log("results in initializer",result);
     }).catch((error)=>{
       console.log("error in initializer", error);
     });
 };
 
-
-module.exports = {searchAttractions, getParkAttractions, initializer, setKey, showResults, getAreas, showAttractions};
+module.exports = {searchAttractions, getParkAttractions, initializer, setKey, showResults, getAreas};
