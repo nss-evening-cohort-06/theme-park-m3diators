@@ -23,6 +23,8 @@ const clickAreaToSeeAttractions = () => {
 };
 
 
+
+
 //Copyright will display in copyright ID. 
 const date = new Date();
 const month = date.getMonth()+1;
