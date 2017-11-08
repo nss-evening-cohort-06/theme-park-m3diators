@@ -2,12 +2,20 @@
 @import 'bootswatch';
 @import url($web-font-path);
 
+#domContainer {
+	display: flex;
+}
+
 .card {
 	height: 350px;
+	border: solid black 2px;
 }
 
 #attractionContainer {
+	display: inline-block;
 	height: auto;
-	width: 30%;
+	width: 220%;
 	border: solid black 5px;
 }
+
+
