@@ -8,21 +8,17 @@ const pressEnter = (press) => {
 		if(event.key === 'Enter'){
 		let txt = ($('#searchBar').val());
 		dataPage.initializer(txt);
-
 		let areaData = dataPage.getAreas(); //figure out if function is still needed
 		let results = areaData.filter(function(thing){
 			return thing.name.indexOf(txt)>-1; //figure out if still works after everything else is working;
 		});
-		console.log("pressEnter", results);
 	}
 	});
 };
 
 const clickAreaToSeeAttractions = () => {
-	console.log("attractions event");
 	$(document).on("click", '.card', (e) => {
-		dataPage.searchAttractions();
-		console.log("attractions event", e.target.closest(".card").id);
+		dataPage.searchAttractions(e.target.closest(".card").id);
 	}); 	
 };
 
