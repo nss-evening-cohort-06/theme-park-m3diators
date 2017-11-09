@@ -24,7 +24,7 @@ const attractionDomString = (attractionArray) => {
 	let attractionString = '';
 	for (let j = 0; j < attractionArray.length; j++ ) {
 		attractionString += `<div id="attractionCard">`;
-		attractionString += `<h4>${attractionArray[j].name} (${attractionArray[j].attraction_type})</h4>`;
+		attractionString += `<h4><a href=""> ${attractionArray[j].name}</a> (${attractionArray[j].attraction_type})</h4>`;
 
 		//attractionString += `<p>${attractionArray[j].description}</p>`;
 		attractionString += `</div>`;
