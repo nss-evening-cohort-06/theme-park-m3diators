@@ -1,3 +1,4 @@
+![](https://media.giphy.com/media/3o6nUNDlrvsAWBgGIw/giphy.gif)
 # Theme Park Map Builder - Group Project
 
 As a team you will create a interactive map of a theme park. The park will include different areas with attractions and events.
@@ -24,3 +25,11 @@ As a team you will create a interactive map of a theme park. The park will inclu
 * Browserify
 * Bootstrap Grid Framework
 * Firebase for data storage and retrieval
+
+
+## Contributors
+* Anna
+* Matt
+* Jessica
+* Juno
+
