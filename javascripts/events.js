@@ -8,10 +8,11 @@ const pressEnter = (press) => {
 		if(event.key === 'Enter'){
 		let txt = ($('#searchBar').val());
 		dataPage.initializer(txt);
-		let areaData = dataPage.getAreas(); //figure out if function is still needed
+		let areaData = dataPage.getAreas();
 		let results = areaData.filter(function(thing){
-			return thing.name.indexOf(txt)>-1; //figure out if still works after everything else is working;
+			return thing.name.indexOf(txt)>-1;
 		});
+		dataPage.searchAttractions(results[0].id);
 	}
 	});
 };
