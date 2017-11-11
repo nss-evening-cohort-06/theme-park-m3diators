@@ -12,7 +12,7 @@ const pressEnter = (press) => {
 		let results = areaData.filter(function(thing){
 			return thing.name.indexOf(txt)>-1;
 		});
-		dom.domString(results);
+		dataPage.searchAttractions(results[0].id);
 	}
 	});
 };
